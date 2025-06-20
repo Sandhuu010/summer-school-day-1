@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+</head>
+<body>
+  <header>
+    <h1>Contact Me</h1>
+    <hr>
+    <nav>
+      <a href="portfolio.html">Home</a> |
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <form action="#" method="post">
+      <label>Name: <input type="text" name="name" required></label><br><br>
+      <label>Email: <input type="email" name="email" required></label><br><br>
+      <label>Phone: <input type="tel" name="phone" pattern="[0-9]{10}" required></label><br><br>
+      <label>Message:<br>
+      <textarea name="message" rows="5" cols="30" required></textarea>
+      </label><br><br>
+      <label>How did you find me?
+      <select name="source">
+      <option value="linkedin">LinkedIn</option>
+      <option value="github">GitHub</option>
+      <option value="google">Google Search</option>
+      <option value="friend">Friend</option>
+      </select>
+      </label><br><br>
+
+      <label>Preferred Contact Date:
+      <input type="date" name="contact_date" required>
+      </label><br><br>
+
+      <label>Urgency Level:
+      <input type="range" name="urgency" min="1" max="10">
+      </label><br><br>
+
+      <label>Preferred Contact Method:</label><br>
+      <input type="checkbox" name="contact_method" value="Email"> Email<br>
+      <input type="checkbox" name="contact_method" value="Phone"> Phone<br>
+      <input type="checkbox" name="contact_method" value="Text"> Text<br><br>
+
+      <label>Inquiry Type:</label><br>
+      <input type="radio" name="inquiry" value="General" required> General<br>
+      <input type="radio" name="inquiry" value="Business"> Business<br>
+      <input type="radio" name="inquiry" value="Support"> Support<br><br>
+
+     <input type="submit" value="Submit">
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Portfolio</p>
+  </footer>
+</body>
+</html>
